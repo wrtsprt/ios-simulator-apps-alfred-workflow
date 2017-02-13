@@ -8,11 +8,11 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>0F91FB1D-068E-48DE-AF19-A5DFA2A1A2F3</key>
+		<key>090B7C32-7408-453D-9351-C595CA88C014</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7A9B4E1F-0B3A-40F9-A85A-201C599CDD90</string>
+				<string>DA10030B-FE24-4675-9D1D-64BC82A6E14E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>15E7ABF3-218E-47E5-B120-83DEBC938433</key>
+		<key>0F44B354-A437-499E-97F3-09C24552B813</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0F91FB1D-068E-48DE-AF19-A5DFA2A1A2F3</string>
+				<string>090B7C32-7408-453D-9351-C595CA88C014</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -73,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9C2861CB-382E-4212-BCB2-742DB14184AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EC1973C0-D09A-4C0E-A708-92BC35014E08</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AC920237-C64C-4EE1-AF78-C60125CC3460</key>
 		<array>
 			<dict>
@@ -86,11 +99,50 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B7F07242-9FA8-4CA2-A63C-0F505C6650F4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9C2861CB-382E-4212-BCB2-742DB14184AA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C7DBD597-2AC9-4177-BC16-176EBB6A2D86</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>C11961A2-A67A-4D48-8792-90AA10AD8E4C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DA10030B-FE24-4675-9D1D-64BC82A6E14E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1E52EC82-FD8D-4E00-814E-F5F6EE810776</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EC1973C0-D09A-4C0E-A708-92BC35014E08</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F14AF4C-B884-45B4-8314-F1F2536B19A0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -184,6 +236,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>script</key>
+				<string>python ./uninstall_app.py {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>963E6413-9DDC-4642-A184-14764565F549</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -248,52 +323,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>126</integer>
-				<key>script</key>
-				<string>python ./uninstall_app.py {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>963E6413-9DDC-4642-A184-14764565F549</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>ruby ./reset-all.rb</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>0F91FB1D-068E-48DE-AF19-A5DFA2A1A2F3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
@@ -333,27 +362,6 @@
 			<string>8C7D1146-E66D-46AF-9EDE-A63D50164F16</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>All iOS Simulators have been Reset if possible</string>
-				<key>title</key>
-				<string>Simulators Reset</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>7A9B4E1F-0B3A-40F9-A85A-201C599CDD90</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -402,27 +410,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>simreset</string>
-				<key>subtext</key>
-				<string>Resets all iOS simulators in all found Xcodes</string>
-				<key>text</key>
-				<string>Reset iOS Simulators</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>15E7ABF3-218E-47E5-B120-83DEBC938433</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
@@ -463,6 +450,168 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>xcrun simctl erase all</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DA10030B-FE24-4675-9D1D-64BC82A6E14E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)	tell application "Simulator" to quit
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>090B7C32-7408-453D-9351-C595CA88C014</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>All iOS Simulators have been Reset for the current Xcode</string>
+				<key>title</key>
+				<string>Simulators Reset</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1E52EC82-FD8D-4E00-814E-F5F6EE810776</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>simreset</string>
+				<key>subtext</key>
+				<string>Resets all iOS simulators for current Xcode</string>
+				<key>text</key>
+				<string>Reset iOS Simulators (current Xcode)</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0F44B354-A437-499E-97F3-09C24552B813</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)	tell application "Simulator" to quit
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>9C2861CB-382E-4212-BCB2-742DB14184AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>simresetall</string>
+				<key>subtext</key>
+				<string>Resets all iOS simulators in all found Xcodes</string>
+				<key>text</key>
+				<string>Reset iOS Simulators</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B7F07242-9FA8-4CA2-A63C-0F505C6650F4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>All iOS Simulators have been Reset if possible</string>
+				<key>title</key>
+				<string>Simulators Reset</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>3F14AF4C-B884-45B4-8314-F1F2536B19A0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>ruby ./reset-all.rb</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EC1973C0-D09A-4C0E-A708-92BC35014E08</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -475,19 +624,26 @@
 			<key>ypos</key>
 			<real>140</real>
 		</dict>
-		<key>0F91FB1D-068E-48DE-AF19-A5DFA2A1A2F3</key>
+		<key>090B7C32-7408-453D-9351-C595CA88C014</key>
 		<dict>
 			<key>xpos</key>
 			<integer>500</integer>
 			<key>ypos</key>
-			<real>240</real>
+			<integer>570</integer>
 		</dict>
-		<key>15E7ABF3-218E-47E5-B120-83DEBC938433</key>
+		<key>0F44B354-A437-499E-97F3-09C24552B813</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<real>340</real>
+			<integer>570</integer>
+		</dict>
+		<key>1E52EC82-FD8D-4E00-814E-F5F6EE810776</key>
+		<dict>
+			<key>xpos</key>
+			<integer>880</integer>
+			<key>ypos</key>
+			<integer>570</integer>
 		</dict>
 		<key>38DFD2DA-6DD1-403F-8F71-499B98BCCADD</key>
 		<dict>
@@ -496,19 +652,19 @@
 			<key>ypos</key>
 			<real>40</real>
 		</dict>
+		<key>3F14AF4C-B884-45B4-8314-F1F2536B19A0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>890</integer>
+			<key>ypos</key>
+			<integer>700</integer>
+		</dict>
 		<key>4EB61527-10BC-40EE-9185-E988A89344D7</key>
 		<dict>
 			<key>xpos</key>
 			<integer>500</integer>
 			<key>ypos</key>
 			<real>40</real>
-		</dict>
-		<key>7A9B4E1F-0B3A-40F9-A85A-201C599CDD90</key>
-		<dict>
-			<key>xpos</key>
-			<integer>700</integer>
-			<key>ypos</key>
-			<real>240</real>
 		</dict>
 		<key>8C7D1146-E66D-46AF-9EDE-A63D50164F16</key>
 		<dict>
@@ -524,12 +680,26 @@
 			<key>ypos</key>
 			<real>140</real>
 		</dict>
+		<key>9C2861CB-382E-4212-BCB2-742DB14184AA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>670</integer>
+		</dict>
 		<key>AC920237-C64C-4EE1-AF78-C60125CC3460</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
 			<real>440</real>
+		</dict>
+		<key>B7F07242-9FA8-4CA2-A63C-0F505C6650F4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>670</integer>
 		</dict>
 		<key>C11961A2-A67A-4D48-8792-90AA10AD8E4C</key>
 		<dict>
@@ -544,6 +714,20 @@
 			<integer>500</integer>
 			<key>ypos</key>
 			<real>340</real>
+		</dict>
+		<key>DA10030B-FE24-4675-9D1D-64BC82A6E14E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>710</integer>
+			<key>ypos</key>
+			<integer>570</integer>
+		</dict>
+		<key>EC1973C0-D09A-4C0E-A708-92BC35014E08</key>
+		<dict>
+			<key>xpos</key>
+			<integer>710</integer>
+			<key>ypos</key>
+			<integer>700</integer>
 		</dict>
 		<key>FAB50204-41C8-459B-A7C4-55C2452D7033</key>
 		<dict>
